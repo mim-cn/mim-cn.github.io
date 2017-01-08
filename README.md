@@ -1,4 +1,4 @@
-# <center> [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
+# <[Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
 
 > You can click [Here](https://github.com/skybosi) to get the message of mine !
 
