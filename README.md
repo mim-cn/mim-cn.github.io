@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+# <center> [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
 
-You can use the [editor on GitHub](https://github.com/skybosi/skybosi.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> You can click [Here](https://github.com/skybosi) to get the message of mine !
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Then here is some info. of myself
 
-### Markdown
+|          |            |
+----------:|:-------------
+__Name__   |  [skybosi](https://github.com/skybosi)
+__Phone__  |  15102171037
+__email__  |  <skybosi_ok@163.com>
+__Where__  |  Shanghai, China
+__Wanted__ |  __c/c++__
+__School__ |  Hebei University Of Engineering
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Skill
 
-```markdown
-Syntax highlighted code block
+### __c++/c__
 
-# Header 1
-## Header 2
-### Header 3
+>#### [Imaginer](https://github.com/skybosi/Imaginer)
+- Construct the world with imagination, image......, imagination......,This is a 
 
-- Bulleted
-- List
+>#### [iGenfuner](https://github.com/skybosi/iGenfuner) 
+- Imaginer-Generate-function-er =>(iGenfuner) : Function generator and parser
+    - From this class name,you can know this a utils for Imaginer,It's use to parser(use RPN) a input string, maybe a math function or a math expression;
+    - From the parser result,must Generate a operate stream (op-stream), to save/record the function or expression Each step of the process;
+    - Then while you want to get a Special value(eg:1,2,3...),Will use the recorded op-stream, step-by-step calculation until the final results
 
-1. Numbered
-2. List
+- From the name You can know is a Utils for Imaginer,It's a parser of the math expression,use to parser a string expression
+    and then get Each value's function value you want.Now It's support:    
+    - Elementary arithmetic(fours operators +,-,*,/)
+    - () , -, !, %
+    - sin, cos, tan, ... [sysFun](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
+    - Custom math function： [user1 & user2](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
 
-**Bold** and _Italic_ and `Code` text
+- Detail descripe [see here](https://github.com/skybosi/iGenfuner/blob/master/README.md)        
 
-[Link](url) and ![Image](src)
-```
+### JNI/NDK ()
+>#### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
+- The purpose of this application is simply to let Imaginer more visual, improve the specific algorithm execution details of clarity, extent
+have to process the debugging results show, of course its significance as an application cannot be ignored, perhaps in the future is likely to
+will stand out as a separate small guy
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/skybosi/skybosi.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
