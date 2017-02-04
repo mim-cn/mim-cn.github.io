@@ -1,4 +1,5 @@
 # [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
+### [中文版](./README-zh.md)
 
 > You can click [Here](https://github.com/skybosi) to get the message of mine !
 
