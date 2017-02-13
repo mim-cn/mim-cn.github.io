@@ -1,9 +1,10 @@
 # [欢迎莅临skybosi的GitHub主页](https://skybosi.github.io/)
+
 ### [English Version](./README.md)
 
 [这里](https://github.com/skybosi) 去我的github主页
 
-## 联系鄙人：
+### `联系鄙人:`
 
 |          |            |
 ----------:|:-------------
@@ -14,14 +15,14 @@ __驻地__   |  中国，上海
 __期望__   |  __c/c++__
 __学校__   |  河北工程大学
 
-## 会的东西 & 开源项目
+### `会的东西 & 开源项目:`
 
-### __c++/c__
+#### __C/C++__
 
-#### [Imaginer](https://github.com/skybosi/Imaginer)
+>##### [Imaginer](https://github.com/skybosi/Imaginer)
 - Construct the world with imagination, image......, imagination......, [这里](./Imaginer进展.md)是整个的开发列表清单，详细的记录着项目的开发过程
 
-#### [iGenfuner](https://github.com/skybosi/iGenfuner) 
+>##### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : 函数数学表达式的解析工具
     - 顾名思义这是一个Imaginer的工具类,用来对输入的数学表达式字符串的解析,采用中缀表达式(RPN);
     - 先对输入的字符串转化为相应的中缀表达式
@@ -37,9 +38,13 @@ __学校__   |  河北工程大学
 - 新增 [js版本](https://github.com/skybosi/wx-Canvas/tree/master/lib) 用在 微信小程序项目[wx-Canvas](https://github.com/skybosi/wx-Canvas) 
     - 注:暂不支持自定义函数绑定功能 [binduser](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
 
-### JNI/NDK ()
-#### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
+#### __JNI/NDK (java)__
+>##### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
 - 这个应用的目的仅仅是为了让Imaginer更加可视化，提高其中的具体算法运行细节的清晰程度，一定程度上有利于过程调试效果展示，当然其本身作为一个应用的意 义也不能被忽视，或许未来很有可能会独立出来作为一个单独的小家伙
+
+#### __javaScript__
+>#### [wx-Canvas](https://github.com/skybosi/wx-Canvas)
+- 这是一个微信小程序 —— 一个简易的数学函数图像渲染器，初步目标是将 iGenfuner 的功能从c++移植到js(或者说是微信小程序中);
 
 
 
