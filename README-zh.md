@@ -39,11 +39,13 @@ __学校__   |  河北工程大学
     - 注:暂不支持自定义函数绑定功能 [binduser](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
 
 #### __JNI/NDK (java)__
-##### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
+
+#####  [ImaginerApp](https://github.com/skybosi/ImaginerApp)
 - 这个应用的目的仅仅是为了让Imaginer更加可视化，提高其中的具体算法运行细节的清晰程度，一定程度上有利于过程调试效果展示，当然其本身作为一个应用的意 义也不能被忽视，或许未来很有可能会独立出来作为一个单独的小家伙
 
 #### __javaScript__
-#### [wx-Canvas](https://github.com/skybosi/wx-Canvas)
+
+####  [wx-Canvas](https://github.com/skybosi/wx-Canvas)
 - 这是一个微信小程序 —— 一个简易的数学函数图像渲染器，初步目标是将 iGenfuner 的功能从c++移植到js(或者说是微信小程序中);
 
 

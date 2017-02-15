@@ -41,14 +41,14 @@ __School__ |  Hebei University Of Engineering
 
 ### __JNI/NDK (java)__
 
-#### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
+####  [ImaginerApp](https://github.com/skybosi/ImaginerApp)
 - The purpose of this application is simply to let Imaginer more visual, improve the specific algorithm execution details of clarity, extent
 have to process the debugging results show, of course its significance as an application cannot be ignored, perhaps in the future is likely to
 will stand out as a separate small guy
 
 ### __javaScript__
 
-#### [wx-Canvas](https://github.com/skybosi/wx-Canvas)
+####  [wx-Canvas](https://github.com/skybosi/wx-Canvas)
 - This is small-app on the wechat - A small image renderer use to WeChat-small-program,jsut want to transplant draw math function image from c++ to js (or we-chat);
 Now can work well!
 
