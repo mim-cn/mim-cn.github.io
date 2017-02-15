@@ -1,5 +1,6 @@
 # [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
-### [中文版](./README-zh.md)
+
+###  [中文版](./README-zh.md)
 
 > You can click [Here](https://github.com/skybosi) to get the message of mine !
 
@@ -18,10 +19,10 @@ __School__ |  Hebei University Of Engineering
 
 ### __C/C++__
 
->#### [Imaginer](https://github.com/skybosi/Imaginer)
+#### [Imaginer](https://github.com/skybosi/Imaginer)
 - Construct the world with imagination, image......, imagination......, [Here](./Imaginer进展.md) show the Imaginer Development List
 
->#### [iGenfuner](https://github.com/skybosi/iGenfuner) 
+#### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : Function generator and parser
 - From this class name,you can know this a utils for Imaginer,It's use to parser(use RPN) a input string, maybe a math function or a math expression;
 - From the parser result,must Generate a operate stream (op-stream), to save/record the function or expression Each step of the process;
@@ -39,7 +40,7 @@ __School__ |  Hebei University Of Engineering
     - NOTE:The [binduser](https://github.com/skybosi/iGenfuner/blob/master/README.md#function) function is missing
 
 ### __JNI/NDK (java)__
->#### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
+#### [ImaginerApp](https://github.com/skybosi/ImaginerApp)
 - The purpose of this application is simply to let Imaginer more visual, improve the specific algorithm execution details of clarity, extent
 have to process the debugging results show, of course its significance as an application cannot be ignored, perhaps in the future is likely to
 will stand out as a separate small guy
