@@ -2,7 +2,7 @@
 
 ###  [中文版](./README-zh.md)
 
-> You can click [Here](https://github.com/skybosi) to get the message of mine !
+You can click [Here](https://github.com/skybosi) to get the message of mine !
 
 Then here is some info. of myself
 
@@ -46,7 +46,7 @@ have to process the debugging results show, of course its significance as an app
 will stand out as a separate small guy
 
 ### __javaScript__
->#### [wx-Canvas](https://github.com/skybosi/wx-Canvas)
+#### [wx-Canvas](https://github.com/skybosi/wx-Canvas)
 - This is small-app on the wechat - A small image renderer use to WeChat-small-program,jsut want to transplant draw math function image from c++ to js (or we-chat);
 Now can work well!
 
