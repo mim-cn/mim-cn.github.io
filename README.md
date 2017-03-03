@@ -69,7 +69,7 @@ Now can work well!
 - Company: [XOR Media](http://www.xor-media.tv/) Welcome!
 - Time: 2015-7 ~ so far (2017-3-3, is expected to leave at the end of March)
 - Works details: bug handling, improve the development of modules
-- Experience Summary: [MQTT] (http://mqtt.org/), [libuv] (http://libuv.org/) and so on a certain degree of familiarity and mastery
+- Experience Summary: [MQTT](http://mqtt.org/), [libuv](http://libuv.org/) and so on a certain degree of familiarity and mastery
 - The result: [maomao] (https://github.com/skybosi/maomao)
     - is the design and development of a network of communications projects, the initial design of the use of mqtt as an application layer protocol, combined with libuv processing network communication. Now basically completed libuv c ++ package (`` `` `` `` `` `` `` `` `` `` Later will be integrated into their own project `)
     - `Not complete, Not dare to blow!`
