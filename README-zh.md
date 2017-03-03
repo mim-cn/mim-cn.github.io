@@ -8,7 +8,7 @@
 
 |          |            |
 ----------:|:-------------
-__姓名__   |  [skybosi](https://github.com/skybosi)
+__姓名__   |  费德剑[skybosi](https://github.com/skybosi)
 __电话__   |  15102171037
 __email__  |  <skybosi_ok@163.com>
 __驻地__   |  中国，上海
@@ -20,8 +20,16 @@ __学校__   |  河北工程大学
 #### __C/C++__
 
 ##### [Imaginer](https://github.com/skybosi/Imaginer)
-- Construct the world with imagination, image......, imagination......, [这里](./Imaginer进展.md)是整个的开发列表清单，详细的记录着项目的开发过程
-
+- Construct the world with imagination, image......, imagination......, [这里](https://github.com/skybosi/skybosi.github.io/blob/master/Imaginer%E8%BF%9B%E5%B1%95.md)是整个的开发列表清单，详细的记录着项目的开发过程
+- 到目前为止(2017-3-3),已经将重构后的第一个版本推送到github，重构后的代码在结构上有大面积修改，支持[NDK/JNI编译](https://github.com/skybosi/Imaginer#android)
+- 模块化更加明显：
+    - 数据提供者(`DPer`): 暂时仅支持bmp格式图片处理
+    - 数据处理中心(`DPC`): 普通处理模块(提供常见的:平移，旋转，缩放，椭圆化等),核心处理模块(边界获取,边界内部扣取,边界及内部移动,移动时的碰撞检测)
+    - 颜色/坐标系统(`MetaData`): 颜色系统仅支持(RGBA模型),坐标系统暂时仅支持笛卡尔(Cartesian)坐标
+    - 工具集(`Utils`):
+        - 数学表达式解析(`iGenfuner`)： 完成，有待优化，详见[iGenfuner](https://github.com/skybosi/iGenfuner) 
+        - 坐标变换: 有待完善
+        - 矩阵/向量操作: 基本完成,有待完善
 ##### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : 函数数学表达式的解析工具
     - 顾名思义这是一个Imaginer的工具类,用来对输入的数学表达式字符串的解析,采用中缀表达式(RPN);
@@ -47,6 +55,17 @@ __学校__   |  河北工程大学
 
 ####  [wx-Canvas](https://github.com/skybosi/wx-Canvas)
 - 这是一个微信小程序 —— 一个简易的数学函数图像渲染器，初步目标是将 iGenfuner 的功能从c++移植到js(或者说是微信小程序中);
+- 新增拖拽，坐标，函数点追踪,详见[这里](https://github.com/skybosi/wx-Canvas#example)
+
+### 工作经历
+
+- 公司: [上海异瀚数码](http://www.xor-media.tv/) (欢迎你!)
+- 时间: 2015-7 ~ 至今(2017-3-3,预计3月底离职)
+- 具体职责:bug 处理,模块完善开发
+- 经验总结: [MQTT](http://mqtt.org/),  [libuv](http://libuv.org/) 等一定程度的熟悉和掌握
+- 导致的结果: [maomao](https://github.com/skybosi/maomao)
+    - 正在设计开发的一个网络类通讯项目,初步设想使用mqtt作为应用层协议，结合libuv处理网络通讯.现在已经基本完成libuv的c++封装(`该封装参考了公司的代码，在此特出申明,后期将融合到自己的项目`)
+    - `未完成不敢乱吹!`
 
 
 

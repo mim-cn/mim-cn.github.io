@@ -20,8 +20,19 @@ __School__ |  Hebei University Of Engineering
 ### __C/C++__
 
 #### [Imaginer](https://github.com/skybosi/Imaginer)
-- Construct the world with imagination, image......, imagination......, [Here](./Imaginer进展.md) show the Imaginer Development List
-
+- Construct the world with imagination, image......, imagination......, [Here](https://github.com/skybosi/skybosi.github.io/blob/master/Imaginer%E8%BF%9B%E5%B1%95.md) show the Imaginer Development List
+- Now(2017-3-3) recode version is push,To a large extent changed the overall architecture of the code,Support [NDK/JNI complie](https://github.com/skybosi/Imaginer#android) or
+can see [ImaginerApp](https://github.com/skybosi/ImaginerApp),Support windows and linux/unix
+- modules:
+    - data provider(`Dper`): Temporarily only support `bmp` format image processing
+    - Data processing center(`DPC`):
+        - Common processing module (provides common: translation, rotation, zoom, oval, etc.)
+        - the core processing module (boundary acquisition, boundary internal deduction, boundary and internal movement, movement collision detection)
+    - color/Coordinate system (`MetaData`): The color system only supports (RGBA model), the coordinate system temporarily supports only Cartesian coordinates
+    - Utils (`Utils`):
+        - Mathematical expression analysis(`iGenfuner`): detail see here [iGenfuner](https://github.com/skybosi/iGenfuner)
+        - Coordinate transformation: Need to be improved!
+        - Matrix / vector operation: basic completion, Need to be improved!
 #### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : Function generator and parser
 - From this class name,you can know this a utils for Imaginer,It's use to parser(use RPN) a input string, maybe a math function or a math expression;
@@ -51,6 +62,16 @@ will stand out as a separate small guy
 ####  [wx-Canvas](https://github.com/skybosi/wx-Canvas)
 - This is small-app on the wechat - A small image renderer use to WeChat-small-program,jsut want to transplant draw math function image from c++ to js (or we-chat);
 Now can work well!
+- Add drag, coordinate, function point tracking, see [here](https://github.com/skybosi/wx-Canvas#example)
 
+## Work Experience
+
+- Company: [XOR Media](http://www.xor-media.tv/) Welcome!
+- Time: 2015-7 ~ so far (2017-3-3, is expected to leave at the end of March)
+- Works details: bug handling, improve the development of modules
+- Experience Summary: [MQTT] (http://mqtt.org/), [libuv] (http://libuv.org/) and so on a certain degree of familiarity and mastery
+- The result: [maomao] (https://github.com/skybosi/maomao)
+    - is the design and development of a network of communications projects, the initial design of the use of mqtt as an application layer protocol, combined with libuv processing network communication. Now basically completed libuv c ++ package (`` `` `` `` `` `` `` `` `` `` Later will be integrated into their own project `)
+    - `Not complete, Not dare to blow!`
 
 
