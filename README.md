@@ -71,7 +71,8 @@ Now can work well!
 - Works details: bug handling, improve the development of modules
 - Experience Summary: [MQTT](http://mqtt.org/), [libuv](http://libuv.org/) and so on a certain degree of familiarity and mastery
 - The result: [maomao](https://github.com/skybosi/maomao)
-    - is the design and development of a network of communications projects, the initial design of the use of mqtt as an application layer protocol, combined with libuv processing network communication. Now basically completed libuv c ++ package (`` `` `` `` `` `` `` `` `` `` Later will be integrated into their own project `)
+    - Is the design and development of a network of communications projects, the initial design of the use of mqtt as an application layer protocol, combined with libuv processing network communication.
+     Now basically completed libuv c++ package (`Later will be integrated into their own project`)
     - `Not complete, Not dare to blow!`
 
 
