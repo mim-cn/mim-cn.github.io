@@ -1,6 +1,6 @@
 # [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
 
-###  [中文版](./README-zh.md)
+###  [中文版](https://skybosi.github.io/README-zh.html)
 
 You can click [Here](https://github.com/skybosi) to get the message of mine !
 
@@ -33,6 +33,7 @@ can see [ImaginerApp](https://github.com/skybosi/ImaginerApp),Support windows an
         - Mathematical expression analysis(`iGenfuner`): detail see here [iGenfuner](https://github.com/skybosi/iGenfuner)
         - Coordinate transformation: Need to be improved!
         - Matrix / vector operation: basic completion, Need to be improved!
+
 #### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : Function generator and parser
 - From this class name,you can know this a utils for Imaginer,It's use to parser(use RPN) a input string, maybe a math function or a math expression;

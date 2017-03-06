@@ -1,6 +1,6 @@
 # [欢迎莅临skybosi的GitHub主页](https://skybosi.github.io/)
 
-### [English Version](./README.md)
+### [English Version](https://skybosi.github.io/)
 
 [这里](https://github.com/skybosi) 去我的github主页
 
@@ -30,6 +30,7 @@ __学校__   |  河北工程大学
         - 数学表达式解析(`iGenfuner`)： 完成，有待优化，详见[iGenfuner](https://github.com/skybosi/iGenfuner) 
         - 坐标变换: 有待完善
         - 矩阵/向量操作: 基本完成,有待完善
+
 ##### [iGenfuner](https://github.com/skybosi/iGenfuner) 
 - [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : 函数数学表达式的解析工具
     - 顾名思义这是一个Imaginer的工具类,用来对输入的数学表达式字符串的解析,采用中缀表达式(RPN);
