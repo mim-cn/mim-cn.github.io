@@ -1,6 +1,6 @@
 # 关于mimer的IM设计方案
 
-<div align=center><img width="80" height="80" src="./icon/mimer.gif" alt="mimier" /></div>
+<img width="100" height="100" src="./icon/mimer.gif" alt="mimer" />
 
 ## 目标
 - 实现人与人的IM(最基本的要求)
