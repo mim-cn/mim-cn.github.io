@@ -1,67 +1,68 @@
-# [Welcome to skybosi's GitHub Pages](https://skybosi.github.io/)
+# 关于MQTTER的IM设计方案
 
-###  [中文版](https://skybosi.github.io/README-zh.html)
+## 目标
+- 实现人与人的IM(最基本的要求) 
+    1. 关系建立/解除
+    2. 消息通信
+    3. 关系群建立/解除
+    4. 关系群间的通信
+- 实现人与物的'IM'(人与物的关系控制和反馈) 
+    1. 人与物的关系绑定/解除
+    2. 人的控制指令消息/物的反馈消息
+- 实现物与物的'IM'(物与物的互反馈) 
+    1. 物与物的关联/解除
+    2. 物与物的互反馈、消息传递
+- 以上三种关系可以融合互通
+    1. 人 -> 物 -> 物 ->... ... 
+    2. 人 -> 人 -> 物 ->... ... 
+    3. 物 -> 物 -> 人 ->... ... 
+- NOTE: 该IM是以MQTT协议为基础，为了满足某些需求，可能做一定程度的修改或扩展
 
-You can click [Here](https://github.com/skybosi) to get the message of mine !
+## 整个IM的涉及的结构模块
 
-Then here is some info. of myself
+- 客户端(人, 物) 
+    消息的个体
+- 中心服务器
+    为客户端提供链接支持/数据保存/信息中转
+- P2P客户端
+    此时的中心服务器是连接支持/数据保存，对于客户端之间的消息通信，客户端之间直接通信，服务器辅助同步通讯历史信息
 
-|          |            |
-----------:|:-------------
-__Name__   |  [skybosi](https://github.com/skybosi)
-__Phone__  |  15102171037
-__email__  |  <skybosi_ok@163.com>
-__Where__  |  Shanghai, China
-__Wanted__ |  __c/c++__
-__School__ |  Hebei University Of Engineering
+## 关于MQTT中的数据包类型及其功能设计
 
-## Skill
+- 如下表格显示mqtt的各类型的数据包的相关信息
 
-### __C/C++__
 
-#### [Imaginer](https://github.com/skybosi/Imaginer)
-- Construct the world with imagination, image......, imagination......, [Here](https://github.com/skybosi/skybosi.github.io/blob/master/Imaginer%E8%BF%9B%E5%B1%95.md) show the Imaginer Development List
-- Now(2017-3-3) recode version is push,To a large extent changed the overall architecture of the code,Support [NDK/JNI complie](https://github.com/skybosi/Imaginer#android) or
-can see [ImaginerApp](https://github.com/skybosi/ImaginerApp),Support windows and linux/unix
-- modules:
-    - data provider(`Dper`): Temporarily only support `bmp` format image processing
-    - Data processing center(`DPC`):
-        - Common processing module (provides common: translation, rotation, zoom, oval, etc.)
-        - the core processing module (boundary acquisition, boundary internal deduction, boundary and internal movement, movement collision detection)
-    - color/Coordinate system (`MetaData`): The color system only supports (RGBA model), the coordinate system temporarily supports only Cartesian coordinates
-    - Utils (`Utils`):
-        - Mathematical expression analysis(`iGenfuner`): detail see here [iGenfuner](https://github.com/skybosi/iGenfuner)
-        - Coordinate transformation: Need to be improved!
-        - Matrix / vector operation: basic completion, Need to be improved!
+|    名字    |      值    |    报文流动方向   |            描          述           |   
+|:-----------|:-----------|:------------------|:------------------------------------|
+| Reserved   |      0     |   禁          止  | 保          留                      |   
+| CONNECT    |      1     |   客户端到服务端  | 客户端请求连接服务端                |   
+| CONNACK    |      2     |   服务端到客户端  | 连接报文确认                        |   
+| PUBLISH    |      3     |   两个方向都允许  | 发布消息                            |   
+| PUBACK     |      4     |   两个方向都允许  | QoS 1消息发布收到确认               |   
+| PUBREC     |      5     |   两个方向都允许  | 发布收到（保证交付第一步）          |   
+| PUBREL     |      6     |   两个方向都允许  | 发布释放（保证交付第二步）          |   
+| PUBCOMP    |      7     |   两个方向都允许  | QoS 2消息发布完成（保证交互第三步） |
+| SUBSCRIBE  |      8     |   客户端到服务端  | 客户端订阅请求                      |   
+| SUBACK     |      9     |   服务端到客户端  | 订阅请求报文确认                    |   
+| UNSUBSCRIBE|      10    |   客户端到服务端  | 客户端取消订阅请求                  |   
+| UNSUBACK   |      11    |   服务端到客户端  | 取消订阅报文确认                    |   
+| PINGREQ    |      12    |   客户端到服务端  | 心跳请求                            |   
+| PINGRESP   |      13    |   服务端到客户端  | 心跳响应                            |   
+| DISCONNECT |      14    |   客户端到服务端  | 客户端断开连接                      |   
+| Reserved   |      15    |   禁          止  | 保          留                      |   
 
-#### [iGenfuner](https://github.com/skybosi/iGenfuner) 
-- [Imaginer](https://github.com/skybosi/Imaginer)-Generate-function-er =>(iGenfuner) : Function generator and parser
-- From this class name,you can know this a utils for Imaginer,It's use to parser(use RPN) a input string, maybe a math function or a math expression;
-- From the parser result,must Generate a operate stream (op-stream), to save/record the function or expression Each step of the process;
-- Then while you want to get a Special value(eg:1,2,3...),Will use the recorded op-stream, step-by-step calculation until the final results
-
-- From the name You can know is a Utils for Imaginer,It's a parser of the math expression,use to parser a string expression
-    and then get Each value's function value you want.Now It's support:    
-    - Elementary arithmetic(fours operators +,-,*,/)
-    - () , -, !, %
-    - sin, cos, tan, ... [sysFun](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
-    - Custom math function： [user1 & user2](https://github.com/skybosi/iGenfuner/blob/master/README.md#function)
-
-- Detail descripe [see here](https://github.com/skybosi/iGenfuner/blob/master/README.md)
-- Add [js version Genfuner](https://github.com/skybosi/wx-Canvas/tree/master/lib) for [wx-Canvas](https://github.com/skybosi/wx-Canvas),Just want to use at WeChat-small-program 
-    - NOTE:The [binduser](https://github.com/skybosi/iGenfuner/blob/master/README.md#function) function is missing
-
-### __JNI/NDK (java)__
-
-####  [ImaginerApp](https://github.com/skybosi/ImaginerApp)
-- The purpose of this application is simply to let Imaginer more visual, improve the specific algorithm execution details of clarity, extent
-have to process the debugging results show, of course its significance as an application cannot be ignored, perhaps in the future is likely to
-will stand out as a separate small guy
-
-### __javaScript__
-
-####  [wx-Canvas](https://github.com/skybosi/wx-Canvas)
-- This is small-app on the wechat - A small image renderer use to WeChat-small-program,jsut want to transplant draw math function image from c++ to js (or we-chat);
-Now can work well!
-- Add drag, coordinate, function point tracking, see [here](https://github.com/skybosi/wx-Canvas#example)
-
+- 对原始数据包对应的IM的功能设计
+    - 0, 15 的数据包暂时忽略
+    - CONNECT 客户端连接到中心服务器
+    - CONNACK 中心服务器对CONNECT的确认
+    - PUBLISH 
+        - 客户端连接成功后：中心服务器向客户端发送保存数据(关系资料; 上次DISCONNECT时刻到当前时刻之间，SUBSCRIBE要推送的数据; 其他数据)
+        - 客户端->客户端 客户端->服务器 服务器->客户端
+    - PUB* 消息发布收到确认
+    - SUBSCRIBE 永久/暂时 订阅其他客户端/关系群 (可以理解为添加好友, 订阅信息源), 是一个在中心服务器的检索过程，由于所有注册信息，都在中心服务器记录
+    - SUBACK 订阅请求已接收，服务器记录订阅信息到该用户的个人信息中
+    - UNSUBSCRIBE 立即解除订阅的信息,可设置订阅信息暂存时间(不得超过某个值), 暂存时间以内可以恢复订阅状态, 否则将永久删除
+    - UNSUBACK 取消订阅请求已接收, 服务器将个人信息数据更新，将取消订阅的保存到回收站中暂存(可以恢复), 超过时间删除(无法恢复)
+    - PINGREQ 保持客户端状态的数据包, 根据这个服务器更新客户端的状态(在线, 离线, 离开)
+    - PINGRESP 心跳响应
+    - DISCONNECT 断开连接,服务器保存必要数据,客户端保留历史信息到缓存
